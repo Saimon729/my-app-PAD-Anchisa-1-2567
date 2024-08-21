@@ -32,7 +32,7 @@ export default function Navdar() {
                 <a href="/chatgpt">ChatGPT</a>
               </li>
               <li className="text-stone-600 hover:text-blue-600 hover:font-bold font-medium mx-4 my-1">
-                <a href="/evaluation">การประเมินนโยบายสาธารณะ</a>
+                <a href="/productlist">การประเมินนโยบายสาธารณะ</a>
               </li>
               <li className="text-stone-600 hover:text-blue-600 hover:font-bold font-medium mx-4 my-1">
                 <a href="/contact">ติดต่อ</a>
@@ -41,7 +41,7 @@ export default function Navdar() {
                 <a href="#">LogIn</a>
               </li>
               <li className="text-white bg-blue-600 px-2 rounded-2xl mx-4 my-1 hover:bg-white hover:text-blue-600 hover:border-2 hover:border-blue-600">
-                <a href="/signin">SignUp</a>
+                <a href="/">SignUp</a>
               </li>
             </ul>{" "}
             <button className="block p-3 mx-10 md:hidden hover:bg-gray-200 rounded-xl group">
