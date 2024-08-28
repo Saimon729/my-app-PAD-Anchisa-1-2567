@@ -1,6 +1,5 @@
 //models\ProductModel.js
 import mongoose, { Schema } from "mongoose";
-import { Numans } from "next/font/google";
 
 const topicSchema = new Schema(
   {
@@ -14,7 +13,7 @@ const topicSchema = new Schema(
     evaluation: { type: Number, required: true },
     strength: { type: String, required: true },
     weak: { type: String, required: true },
-    devrlopment: { type: String, required: true },
+    development: { type: String, required: true },
     suggestion: { type: String, required: true },
   },
   {
