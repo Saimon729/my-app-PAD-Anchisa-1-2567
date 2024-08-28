@@ -6,9 +6,17 @@ import { useRouter } from "next/navigation";
 
 export default function AddProduct() {
   const [name, setName] = useState("");
-  const [image, setImage] = useState("");
-  const [price, setPrice] = useState("");
-  const [category, setCategory] = useState("");
+  const [project, setProject] = useState("");
+  const [implementation, setImplementation] = useState("");
+  const [mobile, setMobile] = useState("");
+  const [email, setEmail] = useState("");
+  const [budget, setBudget] = useState("");
+  const [year, setYear] = useState("");
+  const [evaluation, setEvaluation] = useState("");
+  const [weak, setWeak] = useState("");
+  const [strength, setStrength] = useState("");
+  const [development, setDevelopment] = useState("");
+  const [suggestion, setSuggestion] = useState("");
 
   const router = useRouter();
 
@@ -81,8 +89,8 @@ export default function AddProduct() {
     </label>
     <div className="mt-2">
     <input
-          onChange={(e) => setImage(e.target.value)}
-          value={image}
+          onChange={(e) => setProject(e.target.value)}
+          value={project}
           className="input input-bordered input-accent w-full max-w-xs"
           type="text"
           placeholder="/images/1.jpg"
@@ -106,12 +114,12 @@ export default function AddProduct() {
     </label>
     <div className="mt-2">
     <input
-          onChange={(e) => setPrice(e.target.value)}
-          value={price}
+          onChange={(e) => setImplementation(e.target.value)}
+          value={implementation}
           className="input input-bordered input-accent w-full max-w-xs"
           type="number"
-          placeholder="1"
-          defaultValue="1"
+          placeholder="หน่วยงานที่นำไปปฏิบัติ"
+          defaultValue="หน่วยงานที่นำไปปฏิบัติ"
         />
       {/* <input
         type="text"
@@ -131,11 +139,11 @@ export default function AddProduct() {
     </label>
     <div className="mt-2">
     <input
-          onChange={(e) => setCategory(e.target.value)}
-          value={category}
+          onChange={(e) => setEmail(e.target.value)}
+          value={email}
           className="input input-bordered input-accent w-full max-w-xs"
           type="text"
-          placeholder="Product Category"
+          placeholder="อีเมล"
         />
 
       {/* <input
@@ -156,11 +164,11 @@ export default function AddProduct() {
     </label>
     <div className="mt-2">
     <input
-          onChange={(e) => setCategory(e.target.value)}
-          value={category}
+          onChange={(e) => setMobile(e.target.value)}
+          value={mobile}
           className="input input-bordered input-accent w-full max-w-xs"
           type="text"
-          placeholder="Product Category"
+          placeholder="โทรศัพท์"
         />
 
       {/* <input
@@ -181,11 +189,11 @@ export default function AddProduct() {
     </label>
     <div className="mt-2">
     <input
-          onChange={(e) => setCategory(e.target.value)}
-          value={category}
+          onChange={(e) => setBudget(e.target.value)}
+          value={budget}
           className="input input-bordered input-accent w-full max-w-xs"
           type="text"
-          placeholder="Product Category"
+          placeholder="งบประมาณ(ล้านบาท)"
         />
 
       {/* <input
@@ -206,11 +214,11 @@ export default function AddProduct() {
     </label>
     <div className="mt-2">
     <input
-          onChange={(e) => setCategory(e.target.value)}
-          value={category}
+          onChange={(e) => setYear(e.target.value)}
+          value={year}
           className="input input-bordered input-accent w-full max-w-xs"
           type="text"
-          placeholder="Product Category"
+          placeholder="ปีงบประมาณ"
         />
 
       {/* <input
@@ -231,36 +239,11 @@ export default function AddProduct() {
     </label>
     <div className="mt-2">
     <input
-          onChange={(e) => setCategory(e.target.value)}
-          value={category}
+          onChange={(e) => setEvaluation(e.target.value)}
+          value={evaluation}
           className="input input-bordered input-accent w-full max-w-xs"
           type="text"
-          placeholder="Product Category"
-        />
-
-      {/* <input
-        type="text"
-        name="last-name"
-        id="last-name"
-        autoComplete="family-name"
-        className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-      /> */}
-    </div>
-  </div>
-  <div className="sm:col-span-3">
-    <label
-      htmlFor="last-name"
-      className="block text-sm font-medium leading-6 text-gray-900"
-    >
-      จุดแข็ง
-    </label>
-    <div className="mt-2">
-    <input
-          onChange={(e) => setCategory(e.target.value)}
-          value={category}
-          className="input input-bordered input-accent w-full max-w-xs"
-          type="text"
-          placeholder="Product Category"
+          placeholder="ผลประเมิน"
         />
 
       {/* <input
@@ -281,11 +264,36 @@ export default function AddProduct() {
     </label>
     <div className="mt-2">
     <input
-          onChange={(e) => setCategory(e.target.value)}
-          value={category}
+          onChange={(e) => setWeak(e.target.value)}
+          value={weak}
           className="input input-bordered input-accent w-full max-w-xs"
           type="text"
-          placeholder="Product Category"
+          placeholder="จุดอ่อน"
+        />
+
+      {/* <input
+        type="text"
+        name="last-name"
+        id="last-name"
+        autoComplete="family-name"
+        className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+      /> */}
+    </div>
+  </div>
+  <div className="sm:col-span-3">
+    <label
+      htmlFor="last-name"
+      className="block text-sm font-medium leading-6 text-gray-900"
+    >
+      จุดแข็ง
+    </label>
+    <div className="mt-2">
+    <input
+          onChange={(e) => setStrength(e.target.value)}
+          value={strength}
+          className="input input-bordered input-accent w-full max-w-xs"
+          type="text"
+          placeholder="จุดแข็ง"
         />
 
       {/* <input
@@ -306,11 +314,11 @@ export default function AddProduct() {
     </label>
     <div className="mt-2">
     <input
-          onChange={(e) => setCategory(e.target.value)}
-          value={category}
+          onChange={(e) => setDevelopment(e.target.value)}
+          value={development}
           className="input input-bordered input-accent w-full max-w-xs"
           type="text"
-          placeholder="Product Category"
+          placeholder=" แนวทางเสริม(จุดแข็ง)"
         />
 
       {/* <input
@@ -322,7 +330,7 @@ export default function AddProduct() {
       /> */}
     </div>
   </div>
-  <div className="sm:col-span-3">
+  {/* <div className="sm:col-span-3">
     <label
       htmlFor="last-name"
       className="block text-sm font-medium leading-6 text-gray-900"
@@ -338,15 +346,15 @@ export default function AddProduct() {
           placeholder="Product Category"
         />
 
-      {/* <input
+      <input
         type="text"
         name="last-name"
         id="last-name"
         autoComplete="family-name"
         className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-      /> */}
+      />
     </div>
-  </div>
+  </div> */}
   <div className="sm:col-span-3">
     <label
       htmlFor="last-name"
@@ -356,11 +364,11 @@ export default function AddProduct() {
     </label>
     <div className="mt-2">
     <input
-          onChange={(e) => setCategory(e.target.value)}
-          value={category}
+          onChange={(e) => setSuggestion(e.target.value)}
+          value={suggestion}
           className="input input-bordered input-accent w-full max-w-xs"
           type="text"
-          placeholder="Product Category"
+          placeholder="ข้อเสนอแนะ"
         />
 
       {/* <input
