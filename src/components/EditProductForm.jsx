@@ -3,9 +3,9 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import Button from '@mui/material/Button';
 
 export default function EditProductForm({
-  id,
   name,
   project,
   implementation,
@@ -19,7 +19,7 @@ export default function EditProductForm({
   development,
   suggestion,
 }) {
-  const [newName, setNewTitle] = useState(name);
+  const [newName,  setNewTitle] = useState(name);
   const [newProject, setNewProject] = useState(project);
   const [newImplementation, setNewImplementation] = useState(implementation);
   const [newEmail, setNewEmail] = useState(email);
@@ -72,8 +72,18 @@ export default function EditProductForm({
 
   return (
     <>
-      <div className="flex justify-between items-center">
-        <h1 className="font-bold py-10 text-2xl">Update Product</h1>
+      <div className='flex justify-center items-center '>
+        {/* <h1 className="font-bold py-10 text-2xl">
+          </h1> */}
+           <Button
+                    type="submit"
+                    variant="contained" 
+                    color="success"
+                    className='font-bold px-20 py-3 mt-5 items-center'
+                    size='large'
+                    >
+                      Update Product
+                    </Button>
       </div>
       <form onSubmit={handleSubmit} className="flex flex-col gap-3">
       <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-10 ml-24">
@@ -85,13 +95,30 @@ export default function EditProductForm({
       ยุทธศาสตร์ชาติ
     </label>
     <div className="mt-2">
-    <input
-          onChange={(e) => setNewTitle(e.target.value)}
-          value={newName}
-          className="input input-bordered input-accent w-full max-w-xs"
-          type="text"
-        />
-    </div>
+    <select
+     className="input input-bordered input-accent w-full max-w-xs"
+   onChange={(e) =>  setNewTitle(e.target.value)}
+   value={name}
+   type="text"
+   placeholder="ยุทธศาสตร์ชาติ" >
+  <option disabled selected>
+    ดัชนีแผนแม่บทด้านความมั่นคง
+  </option>
+  <option>ดัชนีสันติภาพโลก</option>
+  <option>ดัชนีชี้วัดความสุขโลก</option>
+  <option>ดัชนีสิทธิมนุษยชนและหลักนิติธรรม </option>
+  <option>ดัชนีสถาบันหลัก </option>
+  <option>ดัชนีเสถียรภาพทางการเมือง</option>
+  <option>ดัชนีการมีสิทธิ์มีเสียงของประชาชนและภาระรับผิดชอบ </option>
+  <option>ดัชนีความปลอดภัยจากภัยคุกคาม </option>
+  <option>ดัชนีความสงบสุขภาคใต้ </option>
+  <option>ประสิทธิภาพของหน่วยงานด้านการข่าวและประชาคมข่าวกรอง</option>
+  <option>ดัชนีความแข็งแกร่งทางกำลังทหาร</option>
+  <option>ดัชนีรัฐเปราะบาง</option>
+  <option>จำนวนเป้าหมายย่อยของเป้าหมายการพัฒนาที่ยั่งยืนในเป้าหมายที่ 17 บรรลุตามที่กำหนด</option>
+  <option>ระดับประสิทธิภาพการดำเนินงานของหน่วยงานด้านการจัดการความมั่นคง</option>
+</select>
+</div>
   </div>
   <div className="sm:col-span-3">
     <label
@@ -154,7 +181,7 @@ export default function EditProductForm({
           onChange={(e) => setNewMobile(e.target.value)}
           value={newMobile}
           className="input input-bordered input-accent w-full max-w-xs"
-          type="text"
+          type="number"
         />
     </div>
   </div>   
@@ -170,7 +197,7 @@ export default function EditProductForm({
           onChange={(e) => setNewBudget(e.target.value)}
           value={newBudget}
           className="input input-bordered input-accent w-full max-w-xs"
-          type="text"
+          type="number"
         />
     </div>
   </div>
@@ -186,7 +213,7 @@ export default function EditProductForm({
           onChange={(e) => setNewYear(e.target.value)}
           value={newYear}
           className="input input-bordered input-accent w-full max-w-xs"
-          type="text"
+          type="number"
         />
     </div>
   </div>
@@ -202,7 +229,7 @@ export default function EditProductForm({
           onChange={(e) => setNewEvaluation(e.target.value)}
           value={newEvaluation}
           className="input input-bordered input-accent w-full max-w-xs"
-          type="text"
+          type="number"
         />
     </div>
   </div>
@@ -214,7 +241,7 @@ export default function EditProductForm({
       จุดอ่อน
     </label>
     <div className="mt-2">
-    <input
+    <textarea
           onChange={(e) => setNewWeak(e.target.value)}
           value={newWeak}
           className="input input-bordered input-accent w-full max-w-xs"
@@ -230,7 +257,7 @@ export default function EditProductForm({
       จุดแข็ง
     </label>
     <div className="mt-2">
-    <input
+    <textarea
           onChange={(e) => setNewStrength(e.target.value)}
           value={newStrength}
           className="input input-bordered input-accent w-full max-w-xs"
@@ -246,7 +273,7 @@ export default function EditProductForm({
       จุดที่ควรพัฒนา
     </label>
     <div className="mt-2">
-    <input
+    <textarea
           onChange={(e) => setNewDevelopment(e.target.value)}
           value={newDevelopment}
           className="input input-bordered input-accent w-full max-w-xs"
@@ -262,18 +289,25 @@ export default function EditProductForm({
       ข้อเสนอแนะ
     </label>
     <div className="mt-2">
-    <input
+    <textarea
           onChange={(e) => setNewSuggestion(e.target.value)}
           value={newSuggestion}
           className="input input-bordered input-accent w-full max-w-xs"
           type="text"
         />
     </div>
-  </div>
-      
-        <button className="btn btn-primary w-full max-w-xs">
-          Update Product
-        </button>
+    <div className='flex justify-center items-center '>
+  </div>  
+        <Button
+                    type="submit"
+                    variant="contained" 
+                    color="success"
+                    className='font-bold px-20 py-3 mt-5  items-center'
+                    size='large'
+                    >
+                      Update Product
+                    </Button>
+      </div>
         </div>
       </form>
     </>
