@@ -18,22 +18,22 @@ export default function Main() {
             </div>
           </div>
           <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
-            <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
-              <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
+            <div className="p-4 md:w-1/3 flex">
+              <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 flex-shrink-0">
                 <svg
                   fill="none"
                   stroke="currentColor"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth={2}
-                  className="w-10 h-10"
+                  className="w-6 h-6"
                   viewBox="0 0 24 24"
                 >
                   <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
                 </svg>
               </div>
-              <div className="flex-grow">
-                <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
+              <div className="flex-grow pl-6">
+                <h2 className="text-gray-900 text-lg title-font font-medium mb-2">
                   1.ยุทธศาสตร์ชาติด้านความมั่นคง
                 </h2>
                 <p className="leading-relaxed text-base">
@@ -61,58 +61,8 @@ export default function Main() {
                   โดยประเด็น ยุทธศาสตร์ชาติด้านความมั่นคง ประกอบด้วย ๕ ประเด็น
                   ได้แก่
                 </p>
-                <a
-                  href="/section1"
-                  className="mt-3 text-indigo-500 inline-flex items-center"
-                >
-                  Learn More
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    className="w-4 h-4 ml-2"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M5 12h14M12 5l7 7-7 7" />
-                  </svg>
-                </a>
-              </div>
-              <div className="flex-grow">
-                <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
-                  4.ยุทธศาสตร์ชาติด้านการสร้างโอกาส และความเสมอภาคทางสังคม
-                </h2>
-                <p className="leading-relaxed text-base">
-                  ยุทธศาสตร์ชาติด้านการสร้างโอกาสและความเสมอภาคทางสังคม
-                  มีเป้าหมาย
-                  การพัฒนาที่ส่าคัญที่ให้ความส่าคัญการดึงเอาพลังของภาคส่วนต่าง ๆ
-                  ทั้งภาคเอกชน ประชาสังคม ชุมชนท้องถิ่น มาร่วมขับเคลื่อน
-                  โดยการสนับสนุนการรวมตัวของ
-                  ประชาชนในการร่วมคิดร่วมท่าเพื่อส่วนรวม
-                  การกระจายอ่านาจและความรับผิดชอบ
-                  ไปสู่กลไกบริหารราชการแผ่นดินในระดับท้องถิ่น
-                  การเสริมสร้างความเข้มแข็งของชุมชน ในการจัดการตนเอง
-                  และการเตรียมความพร้อมของประชากรไทยทั้งในมิติสุขภาพ เศรษฐกิจ
-                  สังคม และสภาพแวดล้อมให้เป็นประชากรที่มีคุณภาพ สามารถพึ่งตนเอง
-                  และท่าประโยชน์แก่ครอบครัว ชุมชน และสังคมให้นานที่สุด
-                  โดยรัฐให้หลักประกัน
-                  การเข้าถึงบริการและสวัสดิการที่มีคุณภาพอย่างเป็นธรรมและทั่วถึง
-                </p>
-                <p className="leading-relaxed text-base p-5">
-                  ตัวชี้วัด ประกอบด้วย (๑)
-                  ความแตกต่างของรายได้และการเข้าถึงบริการ
-                  ภาครัฐระหว่างกลุ่มประชากร (๒) ความก้าวหน้าของการพัฒนาคน (๓)
-                  ความก้าวหน้า
-                  ในการพัฒนาจังหวัดในการเป็นศูนย์กลางความเจริญทางเศรษฐกิจ สังคม
-                  และ เทคโนโลยี และ (๔) คุณภาพชีวิตของประชากรสูงอายุ
-                  โดยประเด็นยุทธศาสตร์ชาติด้าน
-                  การสร้างโอกาสและความเสมอภาคทางสังคม ประกอบด้วย ๔ ประเด็น ได้แก
-                </p>
-                <a
-                  href="/section4"
-                  className="mt-3 text-indigo-500 inline-flex items-center"
-                >
+                <a href="/section1"
+                className="mt-3 text-indigo-500 inline-flex items-center">
                   Learn More
                   <svg
                     fill="none"
@@ -128,15 +78,15 @@ export default function Main() {
                 </a>
               </div>
             </div>
-            <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
-              <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
+            <div className="p-4 md:w-1/3 flex">
+              <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 flex-shrink-0">
                 <svg
                   fill="none"
                   stroke="currentColor"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth={2}
-                  className="w-10 h-10"
+                  className="w-6 h-6"
                   viewBox="0 0 24 24"
                 >
                   <circle cx={6} cy={6} r={3} />
@@ -144,12 +94,12 @@ export default function Main() {
                   <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12" />
                 </svg>
               </div>
-              <div className="flex-grow">
-                <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
-                  2.ยุทธศาสตร์ชาติ ด้านการสร้างความสามารถในการแข่งขัน
+              <div className="flex-grow pl-6">
+                <h2 className="text-gray-900 text-lg title-font font-medium mb-2">
+                2.ยุทธศาสตร์ชาติ ด้านการสร้างความสามารถในการแข่งขัน
                 </h2>
                 <p className="leading-relaxed text-base">
-                  ยุทธศาสตร์ชาติด้านการสร้างความสามารถในการแข่งขัน มีเป้าหมาย
+                ยุทธศาสตร์ชาติด้านการสร้างความสามารถในการแข่งขัน มีเป้าหมาย
                   การพัฒนาที่มุ่งเน้นการยกระดับศักยภาพของประเทศในหลากหลายมิติ
                   บนพื้นฐาน แนวคิด ๓ ประการ ได้แก่ (๑) “ต่อยอดอดีต”
                   โดยมองกลับไปที่รากเหง้าทางเศรษฐกิจ อัตลักษณ์ วัฒนธรรม ประเพณี
@@ -182,10 +132,8 @@ export default function Main() {
                   โดยประเด็นยุทธศาสตร์ชาติด้านการสร้าง ความสามารถในการแข่งขัน
                   ประกอบด้วย ๕ ประเด็น ได้แก่
                 </p>
-                <a
-                  href="/section2"
-                  className="mt-3 text-indigo-500 inline-flex items-center"
-                >
+                <a href="/section2"
+                className="mt-3 text-indigo-500 inline-flex items-center">
                   Learn More
                   <svg
                     fill="none"
@@ -200,13 +148,152 @@ export default function Main() {
                   </svg>
                 </a>
               </div>
-              <div className="flex-grow">
-                <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
-                  5.ยุทธศาสตร์ชาติด้านการสร้างการเติบโต
+            </div>
+            <div className="p-4 md:w-1/3 flex">
+              <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 flex-shrink-0">
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  className="w-6 h-6"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
+                  <circle cx={12} cy={7} r={4} />
+                </svg>
+              </div>
+              <div className="flex-grow pl-6">
+                <h2 className="text-gray-900 text-lg title-font font-medium mb-2">
+                3.ยุทธศาสตร์ชาติด้านการพัฒนา
+                  และเสริมสร้างศักยภาพทรัพยากรมนุษย์
+                </h2>
+                <p className="leading-relaxed text-base">
+                ยุทธศาสตร์ชาติด้านการพัฒนาและเสริมสร้างศักยภาพทรัพยากรมนุษย์
+                  มีเป้าหมายการพัฒนาที่ส่าคัญเพื่อพัฒนาคนในทุกมิติและในทุกช่วงวัยให้เป็นคนดี
+                  เก่ง และมีคุณภาพ โดยคนไทยมีความพร้อมทั้งกาย ใจ สติปัญญา
+                  มีพัฒนาการที่ดีรอบด้าน และมีสุขภาวะที่ดีในทุกช่วงวัย
+                  มีจิตสาธารณะ รับผิดชอบต่อสังคมและผู้อื่น มัธยัสถ์ อดออม
+                  โอบอ้อมอารี มีวินัย รักษาศีลธรรม และเป็นพลเมืองดีของชาติ
+                  มีหลักคิด ที่ถูกต้อง มีทักษะที่จ่าเป็นในศตวรรษที่ ๒๑
+                  มีทักษะสื่อสารภาษาอังกฤษและภาษาที่ ๓ และอนุรักษ์ภาษาท้องถิ่น
+                  มีนิสัยรักการเรียนรู้และการพัฒนาตนเองอย่างต่อเนื่องตลอด ชีวิต
+                  สู่การเป็นคนไทยที่มีทักษะสูง เป็นนวัตกร นักคิด ผู้ประกอบการ
+                  เกษตรกรยุคใหม่ และอื่น ๆ โดยมีสัมมาชีพตามความถนัดของตนเอง
+                </p>
+                <p className="leading-relaxed text-base p-5">
+                  ตัวชี้วัด ประกอบด้วย (๑) การพัฒนาคุณภาพชีวิต สุขภาวะ
+                  และความเป็นอยู่ ที่ดีของคนไทย (๒)
+                  ผลสัมฤทธิ์ทางการศึกษาและการเรียนรู้ตลอดชีวิต และ (๓) การพัฒนา
+                  สังคมและครอบครัวไทย
+                  โดยประเด็นยุทธศาสตร์ชาติด้านการพัฒนาและเสริมสร้าง
+                  ศักยภาพทรัพยากรมนุษย์ ประกอบด้วย ๗ ประเด็น ได้แก
+                </p>
+                <a href="/section3"
+                className="mt-3 text-indigo-500 inline-flex items-center">
+                  Learn More
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    className="w-4 h-4 ml-2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
+            <div className="p-4 md:w-1/3 flex">
+              <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 flex-shrink-0">
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  className="w-6 h-6"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                </svg>
+              </div>
+              <div className="flex-grow pl-6">
+                <h2 className="text-gray-900 text-lg title-font font-medium mb-2">
+                4.ยุทธศาสตร์ชาติด้านการสร้างโอกาส และความเสมอภาคทางสังคม
+                </h2>
+                <p className="leading-relaxed text-base">
+                ยุทธศาสตร์ชาติด้านการสร้างโอกาสและความเสมอภาคทางสังคม
+                  มีเป้าหมาย
+                  การพัฒนาที่ส่าคัญที่ให้ความส่าคัญการดึงเอาพลังของภาคส่วนต่าง ๆ
+                  ทั้งภาคเอกชน ประชาสังคม ชุมชนท้องถิ่น มาร่วมขับเคลื่อน
+                  โดยการสนับสนุนการรวมตัวของ
+                  ประชาชนในการร่วมคิดร่วมท่าเพื่อส่วนรวม
+                  การกระจายอ่านาจและความรับผิดชอบ
+                  ไปสู่กลไกบริหารราชการแผ่นดินในระดับท้องถิ่น
+                  การเสริมสร้างความเข้มแข็งของชุมชน ในการจัดการตนเอง
+                  และการเตรียมความพร้อมของประชากรไทยทั้งในมิติสุขภาพ เศรษฐกิจ
+                  สังคม และสภาพแวดล้อมให้เป็นประชากรที่มีคุณภาพ สามารถพึ่งตนเอง
+                  และท่าประโยชน์แก่ครอบครัว ชุมชน และสังคมให้นานที่สุด
+                  โดยรัฐให้หลักประกัน
+                  การเข้าถึงบริการและสวัสดิการที่มีคุณภาพอย่างเป็นธรรมและทั่วถึง
+                </p>
+                <p className="leading-relaxed text-base p-5">
+                  ตัวชี้วัด ประกอบด้วย (๑)
+                  ความแตกต่างของรายได้และการเข้าถึงบริการ
+                  ภาครัฐระหว่างกลุ่มประชากร (๒) ความก้าวหน้าของการพัฒนาคน (๓)
+                  ความก้าวหน้า
+                  ในการพัฒนาจังหวัดในการเป็นศูนย์กลางความเจริญทางเศรษฐกิจ สังคม
+                  และ เทคโนโลยี และ (๔) คุณภาพชีวิตของประชากรสูงอายุ
+                  โดยประเด็นยุทธศาสตร์ชาติด้าน
+                  การสร้างโอกาสและความเสมอภาคทางสังคม ประกอบด้วย ๔ ประเด็น ได้แก
+                </p>
+                <a href="/section4"
+                className="mt-3 text-indigo-500 inline-flex items-center">
+                  Learn More
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    className="w-4 h-4 ml-2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div className="p-4 md:w-1/3 flex">
+              <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 flex-shrink-0">
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  className="w-6 h-6"
+                  viewBox="0 0 24 24"
+                >
+                  <circle cx={6} cy={6} r={3} />
+                  <circle cx={6} cy={18} r={3} />
+                  <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12" />
+                </svg>
+              </div>
+              <div className="flex-grow pl-6">
+                <h2 className="text-gray-900 text-lg title-font font-medium mb-2">
+                5.ยุทธศาสตร์ชาติด้านการสร้างการเติบโต
                   บนคุณภาพชีวิตที่เป็นมิตรต่อสิ่งแวดล้อม
                 </h2>
                 <p className="leading-relaxed text-base">
-                  ยุทธศาสตร์ชาติด้านการสร้างการเติบโตบนคุณภาพชีวิตที่เป็นมิตรต่อ
+                ยุทธศาสตร์ชาติด้านการสร้างการเติบโตบนคุณภาพชีวิตที่เป็นมิตรต่อ
                   สิ่งแวดล้อม
                   มีเป้าหมายการพัฒนาที่ส่าคัญเพื่อน่าไปสู่การบรรลุเป้าหมายการพัฒนา
                   ที่ยั่งยืนในทุกมิติ ทั้งมิติด้านสังคม เศรษฐกิจ สิ่งแวดล้อม
@@ -229,10 +316,8 @@ export default function Main() {
                   โดยประเด็นยุทธศาสตร์ชาติด้านการสร้างการเติบโตบนคุณภาพชีวิตที่เป็นมิตรต่อ
                   สิ่งแวดล้อม ประกอบด้วย ๖ ประเด็น ได้แก
                 </p>
-                <a
-                  href="/section5"
-                  className="mt-3 text-indigo-500 inline-flex items-center"
-                >
+                <a href="/section5"
+                className="mt-3 text-indigo-500 inline-flex items-center">
                   Learn More
                   <svg
                     fill="none"
@@ -248,72 +333,28 @@ export default function Main() {
                 </a>
               </div>
             </div>
-            <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
-              <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
+            <div className="p-4 md:w-1/3 flex">
+              <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 flex-shrink-0">
                 <svg
                   fill="none"
                   stroke="currentColor"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth={2}
-                  className="w-10 h-10"
+                  className="w-6 h-6"
                   viewBox="0 0 24 24"
                 >
                   <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
                   <circle cx={12} cy={7} r={4} />
                 </svg>
               </div>
-              <div className="flex-grow">
-                <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
-                  3.ยุทธศาสตร์ชาติด้านการพัฒนา
-                  และเสริมสร้างศักยภาพทรัพยากรมนุษย์
-                </h2>
-                <p className="leading-relaxed text-base">
-                  ยุทธศาสตร์ชาติด้านการพัฒนาและเสริมสร้างศักยภาพทรัพยากรมนุษย์
-                  มีเป้าหมายการพัฒนาที่ส่าคัญเพื่อพัฒนาคนในทุกมิติและในทุกช่วงวัยให้เป็นคนดี
-                  เก่ง และมีคุณภาพ โดยคนไทยมีความพร้อมทั้งกาย ใจ สติปัญญา
-                  มีพัฒนาการที่ดีรอบด้าน และมีสุขภาวะที่ดีในทุกช่วงวัย
-                  มีจิตสาธารณะ รับผิดชอบต่อสังคมและผู้อื่น มัธยัสถ์ อดออม
-                  โอบอ้อมอารี มีวินัย รักษาศีลธรรม และเป็นพลเมืองดีของชาติ
-                  มีหลักคิด ที่ถูกต้อง มีทักษะที่จ่าเป็นในศตวรรษที่ ๒๑
-                  มีทักษะสื่อสารภาษาอังกฤษและภาษาที่ ๓ และอนุรักษ์ภาษาท้องถิ่น
-                  มีนิสัยรักการเรียนรู้และการพัฒนาตนเองอย่างต่อเนื่องตลอด ชีวิต
-                  สู่การเป็นคนไทยที่มีทักษะสูง เป็นนวัตกร นักคิด ผู้ประกอบการ
-                  เกษตรกรยุคใหม่ และอื่น ๆ โดยมีสัมมาชีพตามความถนัดของตนเอง
-                </p>
-                <p className="leading-relaxed text-base p-5">
-                  ตัวชี้วัด ประกอบด้วย (๑) การพัฒนาคุณภาพชีวิต สุขภาวะ
-                  และความเป็นอยู่ ที่ดีของคนไทย (๒)
-                  ผลสัมฤทธิ์ทางการศึกษาและการเรียนรู้ตลอดชีวิต และ (๓) การพัฒนา
-                  สังคมและครอบครัวไทย
-                  โดยประเด็นยุทธศาสตร์ชาติด้านการพัฒนาและเสริมสร้าง
-                  ศักยภาพทรัพยากรมนุษย์ ประกอบด้วย ๗ ประเด็น ได้แก
-                </p>
-                <a
-                  href="/section3"
-                  className="mt-3 text-indigo-500 inline-flex items-center"
-                >
-                  Learn More
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    className="w-4 h-4 ml-2"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M5 12h14M12 5l7 7-7 7" />
-                  </svg>
-                </a>
-              </div>
-              <div className="flex-grow">
-                <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
-                  6.ยุทธศาสตร์ชาติด้านการปรับสมดุล
+              <div className="flex-grow pl-6">
+                <h2 className="text-gray-900 text-lg title-font font-medium mb-2">
+                6.ยุทธศาสตร์ชาติด้านการปรับสมดุล
                   และพัฒนาระบบการบริหารจัดการภาครัฐ
                 </h2>
                 <p className="leading-relaxed text-base">
-                  ยุทธศาสตร์ชาติด้านการปรับสมดุลและพัฒนาระบบการบริหารจัดการภาครัฐ
+                ยุทธศาสตร์ชาติด้านการปรับสมดุลและพัฒนาระบบการบริหารจัดการภาครัฐ
                   มีเป้าหมายการพัฒนาที่ส่าคัญเพื่อปรับเปลี่ยนภาครัฐที่ยึดหลัก
                   “ภาครัฐของประชาชน เพื่อประชาชนและประโยชน์ส่วนรวม”
                   โดยภาครัฐต้องมีขนาดที่เหมาะสมกับบทบาท ภารกิจ
@@ -345,10 +386,8 @@ export default function Main() {
                   ยุทธศาสตร์ชาติด้านการปรับสมดุลและพัฒนาระบบการบริหารจัดการภาครัฐ
                   ประกอบด้วย ๘ ประเด็น ได้แก่
                 </p>
-                <a
-                  href="/section6"
-                  className="mt-3 text-indigo-500 inline-flex items-center"
-                >
+                <a href="/section6"
+                className="mt-3 text-indigo-500 inline-flex items-center">
                   Learn More
                   <svg
                     fill="none"
